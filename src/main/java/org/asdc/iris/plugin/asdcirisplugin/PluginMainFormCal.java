@@ -4,22 +4,24 @@
  */
 package org.asdc.iris.plugin.asdcirisplugin;
 
-import org.asdc.iris.plugin.CatalogInfo;
 import cfa.vo.iris.gui.NarrowOptionPane;
 import cfa.vo.iris.sed.ExtSed;
 import cfa.vo.iris.sed.SedlibSedManager;
-
 import cfa.vo.iris.utils.HarvardNameResolver;
-import cfa.vo.iris.utils.NameResolver.Position;
+import cfa.vo.iris.utils.Position;
 import cfa.vo.sedlib.Sed;
 import cfa.vo.sedlib.Segment;
 import cfa.vo.sedlib.common.SedException;
 import cfa.vo.sedlib.io.SedFormat;
+import org.asdc.iris.plugin.CatalogInfo;
+import org.jdesktop.application.Task;
+
+import javax.swing.*;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.TreePath;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
-
 import java.io.IOException;
 import java.net.URL;
 import java.text.DateFormat;
@@ -27,16 +29,10 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.zip.GZIPInputStream;
-import javax.swing.*;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreePath;
-import jsky.catalog.Catalog;
-import org.jdesktop.application.Action;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.jdesktop.application.Task;
+import java.util.zip.GZIPInputStream;
 
 /**
  *
