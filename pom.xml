@@ -11,6 +11,10 @@
     <name>asdc-iris-plugin</name>
     <url>http://maven.apache.org</url>
 
+    <description>
+      A plugin to ASI's Science Data Center Multi Catalog Search service.
+    </description>
+
     <parent>
         <groupId>cfa.vo</groupId>
         <artifactId>iris2</artifactId>
@@ -35,19 +39,26 @@
         </dependency>
     </dependencies>
     
-     <build>
-    <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>1.7</source>
-                        <target>1.7</target>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+    <build>
+      <pluginManagement>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+              <source>1.7</source>
+              <target>1.7</target>
+            </configuration>
+          </plugin>
+        </plugins>
+      </pluginManagement>
     </build>
+
+    <distributionManagement>
+      <site>
+        <id>cxc.cfa.harvard.edu</id>
+        <url>file:///proj/web-cxc-dmz-prev/htdocs/iris/asdc-plugin/v${project.version}/</url>
+      </site>
+    </distributionManagement>
     
 </project>
